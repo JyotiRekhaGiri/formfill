@@ -1,0 +1,146 @@
+/* First section styling */
+.first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center; /* Center the text horizontally */
+    line-height: 1.5;
+}
+
+.center-image {
+    margin-top: 20px;
+    width: 300px; /* Adjust the image width as needed */
+    height: auto;
+}
+
+/* Second section styling */
+.second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+}
+
+.corner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* Adjust size */
+    height: auto;
+    margin: 20px;
+}
+
+/* Container wrapper for the 3 containers */
+.container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows the containers to wrap when necessary */
+    margin-top: 50px;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.container {
+    flex: 1 1 calc(33.33% - 40px); /* Makes the containers in a row of 3, with space between them */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container-text {
+    text-align: center;
+    padding: 15px;
+}
+
+.container h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.container p {
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    padding: 10px;
+}
+
+/* Third section styling similar to second */
+.third {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.activity-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.activity-image {
+    width: 100%;
+    height: auto;
+}
+
+.corner-image-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+/* Responsive Design for Tablets and Mobile */
+@media screen and (max-width: 1024px) {
+    .container-wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container {
+        flex: 1 1 calc(50% - 40px); /* 2 containers per row on tablets */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-wrapper {
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1 1 100%; /* Containers stack vertically on mobile */
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller font size for mobile */
+    }
+
+    .container p {
+        font-size: 1rem; /* Adjust for readability on smaller screens */
+    }
+}
