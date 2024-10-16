@@ -21,25 +21,46 @@ h1 {
 
 /* Second section styling */
 .second {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
+    /* align-items: center; */
+    /* margin-top: 30px; */
     position: relative;
 }
-
-.corner-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px; /* Adjust size */
+.second {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  /* Trending section */
+  .second-first {
+    position: relative;
+    margin-bottom: 30px;
+    /* text-align: center; */
+  }
+  
+  .corner-image {
+    width: 30%;
+    max-width: 300px;
     height: auto;
-    margin: 20px;
-}
+    margin-left: 5.5rem;
+    height: auto;
+  }
+  
+  .corners-image {
+    position: absolute;
+    top: -60px;
+    left: 20px;
+    width: 100px; /* Make it smaller */
+    height: auto;
+  }
 
 /* Container wrapper for the 3 containers */
 .container-wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; /* Allows the containers to wrap when necessary */
     margin-top: 50px;
@@ -52,12 +73,12 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* background-color: #f9f9f9; */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .container-image {
@@ -87,30 +108,94 @@ h1 {
 
 /* Third section styling similar to second */
 .third {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    position: relative;
 }
 
 .activity-wrapper {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .activity-image {
-    width: 100%;
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 2rem;
     height: auto;
 }
 
 .corner-image-right {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 100px;
+    top: -60px;
+    left: 150px;
+    width: 100px; /* Make it smaller */
     height: auto;
 }
+
+/* Fourth section styling */
+.fourth {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  
+  /* Trending section */
+  .trending-section {
+    position: relative;
+    margin-bottom: 30px;
+    /* text-align: center; */
+  }
+  
+  .trending-image {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    margin-left: 5rem;
+    height: auto;
+  }
+  
+  .corner-image-small {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    width: 100px; /* Make it smaller */
+    height: auto;
+  }
+  
+  /* Card container - 2 cards in a row */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the cards */
+    margin-top: 20px;
+  }
+  
+  /* Card styling */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+  }  
 
 /* Responsive Design for Tablets and Mobile */
 @media screen and (max-width: 1024px) {
